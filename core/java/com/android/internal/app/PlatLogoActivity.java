@@ -89,6 +89,7 @@ public class PlatLogoActivity extends Activity {
         final TextView tv = new TextView(this);
 
         mIsSlim = SystemProperties.get("ro.slim.version") != null;
+        mIsCodlab = SystemProperties.get("ro.codlab.version") != null;
 
         if (light != null) tv.setTypeface(light);
         tv.setTextSize(30);
